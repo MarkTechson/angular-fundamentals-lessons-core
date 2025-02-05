@@ -10,8 +10,8 @@ In this activity, you'll learn how to setup a form using a template-driven appro
 
 In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 09-template-driven-forms
+```json
+09-template-driven-forms
 ```
 
 Click "Rebuild Environment"
@@ -32,11 +32,11 @@ _Be sure to comment out any other examples we aren't using._
 
 ### Create the model data
 
-1. In the body of `AppComponent` class, add two `string` properties: `title` and `body`
+1. In the body of  `AppComponent` (`src/app/app.component.ts`) class, add two `string` properties: `title` and `body`
 
 ### Configure the form
 
-1. In `app.component.ts`, import `FormsModule` at the file level.
+1. In `src/app/app.component.ts`, import `FormsModule` at the file level.
 
 1. Add `FormsModule` to the `imports` array of the `AppComponent`.
 
@@ -48,4 +48,4 @@ _Be sure to comment out any other examples we aren't using._
 
 1. Save your changes.
 
-1. Confirm in the browser that th properties are updated properly.
+1. Confirm in the browser that the properties are updated properly.

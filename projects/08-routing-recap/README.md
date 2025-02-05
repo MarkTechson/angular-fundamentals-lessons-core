@@ -43,12 +43,10 @@ _Be sure to comment out any other examples we aren't using._
 
 1. In, `details.component.ts`, create a property called `productId` of type `number`.
 
-1. In detail component define an `@Input` property called `id` and create `setter` function for it:
+1. In detail component define a signal `input` property called `id` and create `transform` function for it:
 
    ```typescript
-   @Input() set id(value: number) {
-       this.productId = value;
-   }
+   id = input(-1,  {transform: value => this.productId.set(value) })
    ```
 
 1. Update the `DetailsComponent` template to reference the product from the product list that at the indeces for `productId`.

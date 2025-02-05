@@ -7,6 +7,4 @@ import { CommonModule } from '@angular/common';
     template: ` <h1>Enable routing to see the greeting below</h1> `,
     styles: []
 })
-export class AppComponent {
-  title = '07-routing-basics';
-}
+export class AppComponent {}

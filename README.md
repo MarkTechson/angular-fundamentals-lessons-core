@@ -11,7 +11,7 @@ The best way to experience these workshops is to use Project IDX. Click on the b
 </picture>
 </a>
 
-## How to run these lesson
+## How to run these lessons locally
 
 - Clone this repository to your local computer.
 

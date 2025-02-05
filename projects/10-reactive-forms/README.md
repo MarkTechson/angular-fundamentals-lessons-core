@@ -4,8 +4,8 @@
 
 In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 10-reactive-forms
+```json
+10-reactive-forms
 ```
 
 Click "Rebuild Environment"
@@ -16,7 +16,7 @@ _Be sure to comment out any other examples we aren't using._
 
 ### Enable Reactive Forms
 
-1. In `app.component.ts`, import `ReactiveFormsModule` at the file level.
+1. In `src/app/app.component.ts`, import `ReactiveFormsModule` at the file level.
 
 1. Next, add `ReactiveFormsModule` to the `imports` array of the `AppComponent`.
 

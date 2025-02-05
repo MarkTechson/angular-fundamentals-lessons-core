@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = '08-routing-recap';
 
-  productTitles = ['Product 1', 'Product 2', 'Product 3'];
+  productTitles = signal(['Product 1', 'Product 2', 'Product 3']);
 }

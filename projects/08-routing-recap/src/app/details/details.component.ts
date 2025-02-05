@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
   styles: ``,
 })
 export class DetailsComponent {
-  productList = [
+  productList = signal([
     {
       title: 'Product 1',
       price: 9234,
@@ -32,5 +32,5 @@ export class DetailsComponent {
       price: 4355,
       description: 'Product 3 has my heart',
     },
-  ];
+  ]);
 }
