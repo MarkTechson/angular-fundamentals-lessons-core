@@ -8,11 +8,15 @@ In this activity, you'll learn how to setup a form using a template-driven appro
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
 ```bash
 ng serve 09-template-driven-forms
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 

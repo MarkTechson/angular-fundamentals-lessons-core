@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   template: `
     <section class="container">
       <!-- This article element represents and entire listing -->
@@ -36,7 +35,7 @@ import { Component } from '@angular/core';
   styleUrl: 'app.component.css',
 })
 export class AppComponent {
-  carList = [
+  carList = signal([
     {
       make: 'Foyoda',
       model: 'Famery',
@@ -69,5 +68,5 @@ export class AppComponent {
       year: 2023,
       transmission: 'Automatic',
     },
-  ];
+  ]);
 }

@@ -9,11 +9,15 @@ In this activity you'll learn
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 11-dependency-injection
+```json
+11-dependency-injection
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 
@@ -23,7 +27,7 @@ ng serve 11-dependency-injection
 
 ### Connect the service to the AppComponent
 
-1. In `app.component.ts` do the following:
+1. In `src/app/app.component.ts` do the following:
 
    - import `inject` from `@angular/core`
    - import `UserService` from `./user.service`
@@ -35,13 +39,13 @@ ng serve 11-dependency-injection
    userService = inject(UserService);
    ```
 
-1. Add a property called `userData` of type `User[]` with a default value of `[]`.
+1. Add a signal property called `userData` of type `User[]` with a default value of `[]`.
 
 1. Add the following logic to the constructor:
 
    ```typescript
    this.userService.getUserData().then((data) => {
-     this.userData = data;
+     this.userData.set(data);
    });
    ```
 
@@ -60,5 +64,5 @@ ng serve 11-dependency-injection
 ### (BONUS) Extend this example to a profiles page
 
 1. Make dynamic routes to the a user page
-1. Pass data via the URL to the route using `@Input`
+1. Pass data via the URL to the route using `input`
 1. Add a function to request the resource by id from the placeholder API.

@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { AccountInfo } from './account-info';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   template: `
     <article class="card">
-      <h1 class="card-title">Frontend Masters Express</h1>
+      <h1 class="card-title">Client Workshop Express</h1>
       <p class="card-number">0000 0000 0000 0000</p>
       <section class="membership-info">
         <p>
@@ -27,10 +26,10 @@ import { AccountInfo } from './account-info';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  account: AccountInfo = {
+  account = signal<AccountInfo>({
     name: 'Melisa Evan',
     membershipStatus: 'gold',
     validThru: '12/2022',
     CVV: '123',
-  };
+  });
 }

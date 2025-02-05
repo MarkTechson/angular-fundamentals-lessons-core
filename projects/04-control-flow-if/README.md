@@ -6,17 +6,17 @@ In this activity you'll learn how to use conditionals in templates.
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 04-control-flow-if
+```json
+04-control-flow-if
 ```
 
 # Instructions
 
 1. Add the user information to the credit card using the `Account Info` class.
 
-1. Update `app.component.ts` template to conditionally display the correct badge representing the credit card using the `membershipStatus` property.
+1. Update `src/app/app.component.ts` template to conditionally display the correct badge representing the credit card using the `membershipStatus` property.
 
 1. Save your changes.
 

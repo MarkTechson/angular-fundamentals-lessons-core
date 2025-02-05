@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   template: `
     <article class="offer">
       <h1>
@@ -39,10 +38,10 @@ import { Component } from '@angular/core';
   `,
 })
 export class AppComponent {
-  item = {
+  item = signal({
     name: 'Treasure Trove Trunk',
     price: 30,
     description:
       'Unveil a treasure trove of surprises in this delightful mystery box.',
-  };
+  });
 }

@@ -4,11 +4,15 @@ Deferrable views can be used in component template to defer the loading of selec
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 13-deferrable-views
+```json
+13-deferrable-views
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 

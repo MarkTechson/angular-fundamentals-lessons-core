@@ -4,11 +4,15 @@ Time to get some experience updating component templates and component styles.
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 01-hello-angular
+```json
+01-hello-angular
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 
@@ -22,8 +26,6 @@ ng serve 01-hello-angular
    list-style-type: upper-roman;
    ```
 
-2. Save your changes.
-
-3. Make sure your app is running (`ng serve 01-hello-angular`) and confirm the output in the browser.
+2. Save your changes.x
 
 Hints: use back tick characters for multi-line strings.

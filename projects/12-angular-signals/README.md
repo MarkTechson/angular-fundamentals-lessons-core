@@ -6,17 +6,21 @@ In this activity, you'll learn to work with Angular Signals.
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 12-angular-signals
+```json
+12-angular-signals
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 
 Create a Todolist application to showcase the `WritableSignal` produced by a call to `signal()`.
 
-1. In `app.component.ts`, import `signal` from `@angular/core`
+1. In `src/app/app.component.ts`, import `signal` from `@angular/core`
 1. Create a property called `todos`
 
    - assign the value `signal<Todo[]>();`

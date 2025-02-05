@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Car } from './car';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   template: `
-    <h1>Saved Cars {{ savedCarList.length }}</h1>
+    <h1>Saved Cars {{ savedCarList().length }}</h1>
     <section class="container">
       <!-- This article element represents and entire listing -->
       <article class="listing">
@@ -39,8 +38,8 @@ import { Car } from './car';
   styles: [],
 })
 export class AppComponent {
-  savedCarList: Car[] = [];
-  carList: Car[] = [
+  savedCarList = signal<Car[]>([]);
+  carList = signal<Car[]>([
     {
       make: 'Foyoda',
       model: 'Famery',
@@ -73,5 +72,5 @@ export class AppComponent {
       year: 2023,
       transmission: 'Automatic',
     },
-  ];
+  ]);
 }

@@ -6,19 +6,23 @@ In this activity, you'll learn how to setup and configure your app to use Angula
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 07-routing-basics
+```json
+07-routing-basics
 ```
+
+Click "Rebuild Environment"
+
+_Be sure to comment out any other examples we aren't using._
 
 ## Instructions
 
 ### Enable Routing in the application
 
-1. In `app.routes.ts`, add a the default route path (`''`) that routes to the `GreetingsComponent` in the `routes` array.
+1. In `src/app/app.routes.ts`, add a the default route path (`''`) that routes to the `GreetingsComponent` in the `routes` array.
 
-1. In `app.config.ts`, enable routing in the application by updating the `providers` array with an entry the following entry:
+1. In `src/app/app.config.ts`, enable routing in the application by updating the `providers` array with an entry the following entry:
 
    ```typescript
    provideRouter(routes);
@@ -26,12 +30,10 @@ ng serve 07-routing-basics
 
 ### Add a router outlet to display the routes
 
-1. In `app.component,ts`, import `RouterModule` at the file level, then add it to the component `imports` array.
+1. In `src/app/app.component,ts`, import `RouterModule` at the file level, then add it to the component `imports` array.
 
 1. Next, add a `<router-outlet />` to the template of 'AppComponent'.
 
 1. Save your changes.
 
 1. Confirm that the updates are reflected in the browser. In this case you should see a greeting rendered in the browser.
-
-_Be sure to stop any previously running instances of the application_

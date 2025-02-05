@@ -4,7 +4,6 @@ import { Car } from '../car';
 
 @Component({
   selector: 'app-listing',
-  standalone: true,
   imports: [CommonModule],
   template: ` <!-- listing markup goes here --> `,
   styles: ``,

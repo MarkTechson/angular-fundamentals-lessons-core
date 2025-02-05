@@ -9,15 +9,17 @@ Did you know you can see these instructions formatted by pressing
 
 ## Run this example
 
-From the command line at the root of the project:
+In `dev.nix` make sure the following example is uncommented:
 
-```bash
-ng serve 00-basic-app
+```json
+"00-basic-app"
 ```
 
-(But it won't work yet)
+Click "Rebuild Environment"
 
-## Instructions.
+_Be sure to comment out any other examples we aren't using._
+
+## Instructions
 
 1. In `src/main.ts`, add the following code to the end of the file.
 
@@ -26,11 +28,5 @@ bootstrapApplication(AppComponent, appConfig);
 ```
 
 2. Save your changes.
-
-3. From the command line, root directory `angular-fundamentals-lessons`, run the following command:
-
-```bash
-ng serve 00-basic-app
-```
 
 The application will properly load and be visible in the browser.

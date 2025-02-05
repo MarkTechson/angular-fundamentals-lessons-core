@@ -1,11 +1,15 @@
 # Angular Fundamentals Lessons
 
-## What to install
+## Get started
+The best way to experience these workshops is to use Project IDX. Click on the button below to launch this repository in your browser with all of your dependencies and environment configured for you.
 
-- [Latest version of Node or Active LTS](https://nodejs.org/en/download/)
-- [Angular CLI](https://angular.dev/tools/cli/setup-local#install-the-angular-cli)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [Angular Language Service Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+<a href="https://idx.google.com/import?url=https://github.com/MarkTechson/angular-fundamentals-lessons-core">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.idx.dev/btn/open_dark_32@2x.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.idx.dev/btn/open_light_32@2x.png">
+  <img height="32" alt="Open in IDX" src="https://cdn.idx.dev/btn/open_purple_32@2x.png">
+</picture>
+</a>
 
 ## How to run these lesson
 
