@@ -6,6 +6,12 @@
   idx.extensions = [
     "angular.ng-template"
   ];
+  idx.workspace = {
+    # Runs when a workspace is first created with this \`dev.nix\` file
+    onCreate = {
+      npm-install = "npm install --no-audit --prefer-offline";
+    };
+  };
   idx.previews = {
     enable = true;
     previews = {
